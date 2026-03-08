@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import { Phone, Home, User, Briefcase, FileText, Globe } from 'lucide-react';
 import { TubelightNavbar } from './ui/tubelight-navbar';
 
@@ -20,9 +21,12 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-black/20 backdrop-blur-lg border-b border-white/5"
     >
       <div className="flex items-center gap-2">
-        <img
+        <Image
           src="/gateway-logo-transparent.png"
           alt="Gateway Networks Logo"
+          width={280}
+          height={80}
+          priority
           className="h-16 sm:h-20 w-auto p-1"
         />
       </div>

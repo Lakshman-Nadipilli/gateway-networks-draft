@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --color-destructive-foreground: oklch(0.637 0.237 25.331);
+}
+
+:root {
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --muted-foreground: oklch(0.7 0 0);
+  --background: oklch(0 0 0);
+  --card: oklch(0.1 0 0);
+}
+
+@layer utilities {
+  /* Liquid Glass Core */
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-[20px] border border-white/10 rounded-2xl;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    @apply bg-white/10 border-white/20;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  /* Animated Mesh Gradient Background */
+  .liquid-bg {
+    background: radial-gradient(circle at 0% 0%, #1e1b4b 0%, transparent 50%),
+                radial-gradient(circle at 100% 0%, #312e81 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, #171717 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, #0c0a09 0%, transparent 50%);
+    background-size: 200% 200%;
+    animation: liquid-mesh 15s ease infinite;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
+
+  @keyframes liquid-mesh {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

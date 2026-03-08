@@ -1,0 +1,70 @@
+{
+    "company_name": "Gateway Networks",
+    "plans": [
+        {
+            "id": "1",
+            "name": "Silver",
+            "speed_mbps": 30,
+            "price_monthly": 550,
+            "currency": "INR",
+            "features": [
+                "18+ OTT Platforms",
+                "400+ Channels",
+                "Truly Unlimited Data",
+                "Free Installation"
+            ],
+            "popular": false,
+            "glass_accent": "rgba(59, 130, 246, 0.5)"
+        },
+        {
+            "id": "2",
+            "name": "Gold",
+            "speed_mbps": 50,
+            "price_monthly": 635,
+            "currency": "INR",
+            "features": [
+                "18+ OTT Platforms",
+                "400+ Channels",
+                "Truly Unlimited Data",
+                "Free Installation"
+            ],
+            "popular": false,
+            "glass_accent": "rgba(147, 51, 234, 0.5)"
+        },
+        {
+            "id": "3",
+            "name": "Platinum",
+            "speed_mbps": 100,
+            "price_monthly": 800,
+            "currency": "INR",
+            "features": [
+                "18+ OTT Platforms",
+                "400+ Channels",
+                "Truly Unlimited Data",
+                "Free Installation"
+            ],
+            "popular": true,
+            "glass_accent": "rgba(236, 72, 153, 0.5)"
+        },
+        {
+            "id": "4",
+            "name": "Silver+",
+            "speed_mbps": 150,
+            "price_monthly": 999,
+            "currency": "INR",
+            "features": [
+                "150Mbps Internet + TV Box",
+                "18+ OTT Platforms",
+                "400+ Channels",
+                "Priority Support"
+            ],
+            "popular": false,
+            "glass_accent": "rgba(249, 115, 22, 0.5)"
+        }
+    ],
+    "contact_info": {
+        "phone": "+91 (Your Phone)",
+        "email": "support@gatewaynetworks.in",
+        "address": "Hyderabad, India"
+    }
+}

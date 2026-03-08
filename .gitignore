@@ -5,3 +5,7 @@ coverage/
 *.log
 .env*
 !.env.example
+out/
+.venv/
+remove_white.py
+ui-ux-pro-max-skill/
